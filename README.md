@@ -7,7 +7,7 @@ docker run -p 5000:5000 -e NEW_RELIC_LICENSE_KEY=xxxxx -e NEW_RELIC_APP_NAME=pyt
 
 # To run in kubernetes cloud:
 
-  Use the deployment yaml latest created above:
+  Use the deployment yaml latest created above: latest_py_app_deploy.yaml
   
   Follow this steps:
   
