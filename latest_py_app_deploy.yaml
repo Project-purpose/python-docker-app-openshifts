@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: python-newrelic
-        image: manee2k6/py-newrelic
+        image: manee2k6/py-newrelic:dev
         ports:
         - containerPort: 5000
