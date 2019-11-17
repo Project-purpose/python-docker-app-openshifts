@@ -6,7 +6,7 @@ node{
       }
    
    stage('Docker Build') {
-     def app = docker.build "manee2k6/itrain-padman-py-app"
+     def app = docker.build "ashhh24/python-newrelic"
     }
    
    stage("Tag & Push image"){
