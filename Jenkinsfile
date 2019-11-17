@@ -6,7 +6,10 @@ node{
       }
    
    stage('Docker Build') {
-     def app = docker.build "ashhh24/python-newrelic"
+     def app = docker build -t yesh .
+     sh 'docker tag yesh ashhh24/python-newrelic'
+     sh 'docker push ashhh24/python-newrelic'
+     sh 'docker run -p 5000:5000 -e NEW_RELIC_LICENSE_KEY=8eace5d26308bc09425b65917608d733174f4c33 -e NEW_RELIC_APP_NAME=python-app ashhh24/python-newrelic'
     }
    
    stage("Tag & Push image"){
