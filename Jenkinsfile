@@ -2,7 +2,7 @@ node{
    
    stage(" Code Checkout"){
       echo 'App build started..'
-      git credentialsId: 'githubID', url: 'https://github.com/itrainjaquar/python-docker-app-openshifts.git'
+      git credentialsId: 'githubID', url: 'https://github.com/Project-purpose/python-docker-app-openshifts.git'
       }
    
    stage('Docker Build') {
@@ -11,9 +11,9 @@ node{
    
    stage("Tag & Push image"){
       withDockerRegistry([credentialsId: 'dockerID',url: ""]) {
-          sh 'docker tag manee2k6/itrain-padman-py-app manee2k6/itrain-padman-py-app:dev'
-          sh 'docker push manee2k6/itrain-padman-py-app:dev'
-          sh 'docker push manee2k6/itrain-padman-py-app:latest'
+          sh 'docker tag ashhh24/python-newrelic ashhh24/python-newrelic:dev'
+          sh 'docker push ashhh24/python-newrelic:dev'
+          sh 'docker push ashhh24/python-newrelic:latest'
       }
     }
     stage("App deployment started"){
