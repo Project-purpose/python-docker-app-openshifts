@@ -8,6 +8,7 @@ node{
    stage('Docker Build') {
      //def app = docker build -t yesh .
      //sh 'sudo su'
+     sh docker build -t yesh .
      sh 'sudo docker tag yesh ashhh24/python-newrelic'
      sh 'sudo docker tag yesh ashhh24/python-newrelic'
      sh 'sudo docker push ashhh24/python-newrelic'
