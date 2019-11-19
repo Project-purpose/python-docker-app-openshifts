@@ -33,34 +33,5 @@ node{
    
    // stage('App deployed to Openshift environment') {
     // echo 'App deployed to Openshift environment..'
-    }
-
-   
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  //  }
 }
