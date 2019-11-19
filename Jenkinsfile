@@ -29,7 +29,7 @@ node{
     // sh 'oc new-app shiddu/pythonimage:dev --name python --env NEWRELIC_LICENSE=xxxxxx NEWRELIC_APPNAME=pyapp'
     // sh 'oc expose svc python --name=python'
     // sh 'oc status'
-    }
+  //  }
    
    // stage('App deployed to Openshift environment') {
     // echo 'App deployed to Openshift environment..'
