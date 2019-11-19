@@ -22,7 +22,7 @@ node{
           sh 'docker push ashhh24/python-newrelic:latest'
       }
     }
-    stage("App deployment started"){
+   // stage("App deployment started"){
      //sh 'oc login --token=t01XSPheqChA1n1QxmPCSJAwm5rFNYzb7FvRP9mmg6A --server=https://api.us-east-1.online-starter.openshift.com:6443'
           // sh 'oc new-project creativetech'
       
@@ -31,8 +31,8 @@ node{
     // sh 'oc status'
     }
    
-    stage('App deployed to Openshift environment') {
-     echo 'App deployed to Openshift environment..'
+   // stage('App deployed to Openshift environment') {
+    // echo 'App deployed to Openshift environment..'
     }
 
    
